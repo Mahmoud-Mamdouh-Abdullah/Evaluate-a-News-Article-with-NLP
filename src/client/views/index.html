@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>NLP Project</title>
+  <link rel="stylesheet" href="/styles/resets.css">
+  <link rel="stylesheet" href="/styles/base.css">
+  <link rel="stylesheet" href="/styles/header.css">
+  <link rel="stylesheet" href="/styles/form.css">
+  <link rel="stylesheet" href="/styles/footer.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="">
+      NLP With Webpack
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <form class="" onsubmit="return handleSubmit(event)">
+        <label for="name">Enter the URL</label>
+        <input id="name" type="text" name="input" value="" placeholder="Enter article's URL">
+        <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+      </form>
+    </section>
+
+    <section class="result">
+      <div class="result-div">
+        <div class="item">
+            <h2 style="font-size: 20px; font-weight: bold;">Form Results</h2>
+        </div>
+        <div class="item">
+          <p class="invisible">
+            the first sentence in the article :&nbsp
+          </p>
+          <p id="text"></p>
+        </div>
+        <div class="item">
+          <p class="invisible">
+            article agreement :&nbsp
+          </p>
+          <p id="agreement"></p>
+        </div>
+        <div class="item">
+          <p class="invisible">
+            article subjectivity :&nbsp
+          </p>
+          <p id="subjectivity"></p>
+        </div>
+        <div class="item">
+          <p class="invisible">
+            article confidence :&nbsp
+          </p>
+          <p id="confidence"></p>
+        </div>
+        <div class="item">
+          <p class="invisible">
+            article irony : &nbsp
+          </p>
+          <p id="irony"></p>
+        </div>
+        <div class="item">
+          <p class="invisible">
+            article score_tag :&nbsp
+          </p>
+          <p id="score_tag"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy 2021 Mahmoud M. Khalil - Udacity ND</p>
+  </footer>
+
+</body>
+
+</html>
