@@ -26,7 +26,7 @@
     <section class="result">
       <div class="result-div">
         <div class="item">
-            <h2 style="font-size: 20px; font-weight: bold;">Form Results</h2>
+          <h2 style="font-size: 20px; font-weight: bold;">Form Results</h2>
         </div>
         <div class="item">
           <p class="invisible">
@@ -71,6 +71,16 @@
   <footer>
     <p>&copy 2021 Mahmoud M. Khalil - Udacity ND</p>
   </footer>
+
+  <script>
+    // Check that service workers are supported
+    if ('serviceWorker' in navigator) {
+      // Use the window load event to keep the page load performant
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js');
+      });
+    }
+  </script>
 
 </body>
 
